@@ -519,6 +519,7 @@ textarea {
     color: var(--white-color);
     font-weight: 500;
     margin-bottom: 16px;
+    display: block;
     text-align: center;
     text-align: start;
 }
