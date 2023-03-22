@@ -681,7 +681,7 @@ footer {
     display: block;
     text-align: center;
     color: var(--navy-blue-color);
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .modal {
