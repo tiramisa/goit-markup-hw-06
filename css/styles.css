@@ -59,6 +59,7 @@ a {
 
 textarea {
     resize: none;
+    display: block;
 }
 
 .no-margin {
@@ -611,7 +612,7 @@ footer {
 .modal-title {
     display: block;
     text-align: center;
-    padding-top: 48px;
+    padding-top: 72px;
     padding-bottom: 16px;
 }
 
@@ -656,7 +657,7 @@ footer {
 .modal-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     gap: 4px;
 }
 
@@ -718,16 +719,74 @@ footer {
 
 .modal-checkbox-custom {
     display: flex;
-    width: 20px;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #000;
+    width: 16px;
+    height: 16px;
+    outline: 1.25px solid var(--navy-blue-color);
+    margin-right: 0;
+    border-radius: 2px;
+    border-color: var(--navy-blue-color);
     color: transparent;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox-label {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
 }
 
 .modal-checkbox-input:checked+.modal-checkbox-label>.modal-checkbox-custom {
     color: var(--bg-modal-color);
     background-color: var(--iris-color);
+}
+
+.modal-form .modal-label {
+    display: inline-block;
+    padding-left: 4px;
+    color: var(--light-slate-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.88;
+}
+
+.modal-checkbox {
+    display: flex;
+}
+
+.modal-checkbox-label>.privacy-policy {
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 24px;
+    padding-left: 8px;
+}
+
+.private {
+    text-decoration: underline;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 2px;
+}
+
+.modal-sent {
+    display: flex;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 24px;
+    padding: 16px 32px;
+    justify-content: center;
+    width: 170px;
+    height: 51px;
+    color: var(--white-color);
+    background-color: var(--iris-color);
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+.modal-sent:focus,
+.modal-sent:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--ocean-color);
 }

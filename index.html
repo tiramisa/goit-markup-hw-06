@@ -345,20 +345,24 @@
                 </div>
                 <div class="modal-group">
                     <label class="modal-label" for="email">Comment</label>
-                    <textarea name="comments" id="comments" rows="5" class="modal-comments">Text input</textarea>
+                    <textarea name="comments" id="comments" rows="5"
+                        class="modal-comments modal-label">Text input</textarea>
                 </div>
                 <div class="modal-checkbox">
-                    <input class="modal-checkbox-input 
-                    visually-hidden" type="checkbox" id="checkbox">
+                    <input class="modal-checkbox-input visually-hidden" type="checkbox" id="checkbox"></input>
                     <label class="modal-checkbox-label" for="checkbox">
                         <span class="modal-checkbox-custom">
                             <svg class="modal-checkbox-icon" width="16" height="16">
                                 <use href="./images/icons/sprite.svg#icon-checkbox-checked"></use>
                             </svg>
                         </span>
-                        </span>I accept the terms and conditions of the </label><a
-                        href="https://ru.pinterest.com/pin/376261743866615679/">Privacy Policy</a>
+
+                        <span class="privacy-policy">I accept the terms and conditions of the
+                        </span>
+                        <a class="private" href="https://ru.pinterest.com/pin/376261743866615679/">Privacy Policy</a>
+                    </label>
                 </div>
+                <button type="submit" class="modal-sent">Sent</button>
             </form>
         </div>
     </div>
