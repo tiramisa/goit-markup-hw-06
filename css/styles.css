@@ -303,6 +303,7 @@ textarea {
 }
 
 .items-portfolio {
+    outline: transparent;
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -476,6 +477,7 @@ textarea {
     border: 1px solid var(--light-slate-color);
     border-radius: 4px;
     padding: 16px 32px;
+    outline: transparent;
     transition-duration: 250ms;
     transition-property: border-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
