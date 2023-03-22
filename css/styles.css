@@ -635,7 +635,7 @@ footer {
 }
 
 .footer-space-second {
-    margin-right: 80px;
+    margin-right: auto;
 }
 
 .logo-footer {
@@ -681,7 +681,6 @@ footer {
     display: block;
     text-align: center;
     color: var(--navy-blue-color);
-    padding-top: 72px;
     padding-bottom: 16px;
 }
 
@@ -690,8 +689,8 @@ footer {
     top: 50%;
     left: 50%;
     max-width: 408px;
-    width: 100%;
-    min-height: 576px;
+    padding-bottom: 24px;
+    padding-top: 72px;
     background-color: var(--bg-modal-color);
     border-radius: 4px;
     transform: translate(-50%, -50%);
@@ -712,7 +711,7 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
-    transition-property: box-shadow;
+    transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
@@ -720,8 +719,11 @@ footer {
 
 .modal-btn:hover,
 .modal-btn:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    fill: var(--white-color);
+    background-color: var(--ocean-color);
 }
+
+.modal-button {}
 
 .modal-group {
     display: flex;
@@ -811,7 +813,6 @@ footer {
 .modal-checkbox-label {
     display: flex;
     align-items: center;
-    flex-direction: row;
     cursor: pointer;
     margin-bottom: 24px;
 }
@@ -829,10 +830,6 @@ footer {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.88;
-}
-
-.modal-form {
-    padding-bottom: 24px;
 }
 
 .modal-checkbox {
