@@ -688,7 +688,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    max-width: 408px;
+    width: 408px;
     padding-bottom: 24px;
     padding-top: 72px;
     background-color: var(--bg-modal-color);
@@ -801,7 +801,7 @@ footer {
     display: flex;
     width: 16px;
     height: 16px;
-    outline: 1.25px solid var(--navy-blue-color);
+    outline: 1.25px solid var(--light-slate-color);
     margin-right: 0;
     border-radius: 2px;
     color: transparent;
@@ -839,6 +839,7 @@ footer {
 .modal-checkbox-label>.privacy-policy {
     font-size: 12px;
     padding-left: 8px;
+    color: var(--light-slate-color);
 }
 
 .private {
