@@ -728,7 +728,7 @@ footer {
 .modal-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 
     gap: 4px;
 }
